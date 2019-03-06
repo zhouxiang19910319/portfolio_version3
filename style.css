@@ -269,6 +269,46 @@ media queries
     font-weight: 700;
   }
 
+}
 
+
+
+@media screen and (max-width:600px){
+  body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+
+    /*change these two back to default*/
+    scroll-snap-type: none;
+    overflow-y: auto;
+  }
+  
+  section {
+    padding: 2rem;
+    /* height: calc(100vh - 4rem); */
+    color: black;
+    scroll-snap-align: none;
+  }
+
+  p{
+    font-size: 1rem;
+  }
+
+
+  .thicc_font {
+    font-weight: 900;
+    font-size: 2rem;
+    display: inline-block;
+  }
+
+  #blog_link {
+    padding: .2rem;
+    margin: .2rem .2rem;
+  }
+
+  .page_name{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
 }
 
