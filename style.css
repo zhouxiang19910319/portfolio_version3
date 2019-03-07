@@ -252,10 +252,6 @@ media queries
   body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-
-    /*change these two back to default*/
-    /* scroll-snap-type: none; */
-    /* overflow-y: auto; */
   }
   
   section {
@@ -272,7 +268,7 @@ media queries
 
   .thicc_font {
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 3rem;
     display: inline-block;
   }
 
@@ -282,8 +278,6 @@ media queries
   }
 
   .page_name{
-    /* font-size: 2rem; */
-    /* margin-bottom: 2rem; */
     display: none;
   }
 
