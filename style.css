@@ -1,15 +1,11 @@
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
-  /* scroll-snap-type: y mandatory; */
-  /* overflow-y: scroll; */
 }
 
 section {
   padding: 3rem;
-  height: calc(100vh - 6rem);
   color: black;
-  /* scroll-snap-align: start; */
 }
 
 
@@ -124,21 +120,21 @@ project gallery
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 4rem;
+  border: 1px solid red;
 }
 
-#grid_one,
-#grid_two {
+#project_showcase_area{
+  border: 1px solid green;
+  /* padding: 1rem 1rem; */
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 2rem;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1rem;
 }
 
-.project_image {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  display: block;
+.project_snapshot{
+  width: 722px;
+
 }
 
 .project_title {
