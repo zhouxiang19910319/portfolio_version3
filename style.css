@@ -1,15 +1,15 @@
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  /* scroll-snap-type: y mandatory; */
+  /* overflow-y: scroll; */
 }
 
 section {
   padding: 3rem;
   height: calc(100vh - 6rem);
   color: black;
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
 }
 
 
@@ -75,7 +75,6 @@ HomePage
   margin: 0;
   left: 0;
   width: 500%;
-  -webkit-animation: 15s cert_gallery infinite;
   animation: 15s cert_gallery infinite;
 }
 
