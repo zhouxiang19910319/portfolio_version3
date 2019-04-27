@@ -120,21 +120,16 @@ project gallery
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 4rem;
-  border: 1px solid red;
 }
 
 #project_showcase_area{
-  border: 1px solid green;
-  /* padding: 1rem 1rem; */
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(500px,1fr));
+  grid-gap: 2rem;
 }
 
 .project_snapshot{
-  width: 722px;
-
+  width: 100%;
 }
 
 .project_title {
@@ -194,104 +189,4 @@ strong {
 
 
 
-
-
-
-/*
-media queries
-*/
-
-/*970px*/
-
-@media screen and (max-width:970px) {
-
-  #intro,
-  #cert_gallery,
-  .grid_item {
-    grid-column: 1/-1;
-    position: relative;
-  }
-
-  .grid_item:hover .desc_for_mobile{
-    transition: 1s;
-    bottom: 0px;
-  }
-
-  #trick2g_info,
-  #slowpacedcoding_info,
-  #bootstrap_page_info,
-  #portfolio_info {
-    display: none;
-  }
-
-  section {
-    padding: 3rem;
-    height: calc(100vh-6rem);
-
-    display: grid;
-    place-items: center;
-  }
-
-  .page_name {
-    font-size: 3rem;
-    font-weight: 700;
-  }
-
-}
-
-
-
-/*600px*/
-
-@media screen and (max-width:600px){
-  body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-  }
-  
-  section {
-    padding: 2rem;
-    height: calc(100vh - 4rem);
-    color: black;
-    scroll-snap-align: none;
-  }
-
-  p{
-    font-size: 1rem;
-  }
-
-
-  .thicc_font {
-    font-weight: 900;
-    font-size: 3rem;
-    display: inline-block;
-  }
-
-  #blog_link {
-    padding: .2rem;
-    margin: .2rem .2rem;
-  }
-
-  .page_name{
-    display: none;
-  }
-
-  #cert_gallery{
-    display: none;
-  }
-
-  .project_image{
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  #intro_ul{
-    display: none;
-  }
-
-  #blog_link{
-    display: block;
-    text-align: center;
-  }
-}
 
